@@ -48,7 +48,7 @@ nav{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(10,10,10
 .hero-logo{font-family:var(--font-serif);font-size:clamp(3.5rem,10vw,8rem);font-weight:600;letter-spacing:8px;line-height:1;color:var(--white);animation:fadeUp 1s ease 0.2s both;}
 .hero-logo span{color:var(--gold);}
 .hero-line{width:120px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);margin:22px auto;animation:scaleIn 1s ease 0.4s both;}
-.hero-motto{font-family:var(--font-serif);font-size:clamp(1.1rem,2.8vw,1.65rem);font-weight:300;font-style:italic;color:var(--gold-light);letter-spacing:2px;margin-bottom:44px;animation:fadeUp 1s ease 0.5s both;}
+.hero-motto{font-family:vpar(--font-serif);font-size:clamp(1.1rem,2.8vw,1.65rem);font-weight:300;font-style:italic;color:var(--gold-light);letter-spacing:2px;margin-bottom:44px;animation:fadeUp 1s ease 0.5s both;}
 .hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;animation:fadeUp 1s ease 0.7s both;}
 .btn-gold{background:var(--gold);color:var(--black);padding:14px 38px;font-size:0.67rem;letter-spacing:3px;text-transform:uppercase;font-weight:600;text-decoration:none;transition:all 0.3s;border:none;cursor:pointer;display:inline-block;}
 .btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,168,76,0.4);}
@@ -1242,8 +1242,7 @@ footer{background:#050505;border-top:1px solid rgba(201,168,76,0.18);padding:64p
 </a>
 
 <!-- BACK TO TOP -->
-<a href="#home" class="btt" id="btt"><i class="fas fa-chevron-up"></i></a>
-
+<a onclick="window.scrollTo({top:0,behavior:'smooth'})" class="btt" id="btt"><i class="fas fa-chevron-up"></i></a>
 <script>
 // ══════════════════════════════════════════════════
 //  WhatsApp number — international format, no +
